@@ -2,7 +2,9 @@
     include_once('includes/header.php');
  ?>
 
-    Yo
+    <p>Index</p>
+
+    <a href="<?= URL ?>/vote">Vote</a>
 
  <?php
      include_once('includes/footer.php');

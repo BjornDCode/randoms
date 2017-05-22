@@ -1,3 +1,3 @@
 <?php
-    define('URL', 'localhost/randoms');
+    define('URL', '/randoms');
  ?>

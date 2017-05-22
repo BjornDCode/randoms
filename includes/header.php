@@ -1,5 +1,5 @@
 <?php
-    include_once('../scripts/settings.php');
+    include_once(__DIR__.'/../scripts/settings.php');
  ?>
 
 <!DOCTYPE html>
