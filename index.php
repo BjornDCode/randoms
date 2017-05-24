@@ -1,11 +1,12 @@
 <?php
+    include_once('scripts/settings.php');
     include_once('includes/header.php');
- ?>
+?>
 
-    <p>Index</p>
+    Index Page
 
-    <a href="<?= URL ?>/vote">Vote</a>
+    <a href="<?= URL ?>/vote">Voting Section</a>
 
- <?php
-     include_once('includes/footer.php');
-  ?>
+<?php
+    include_once('includes/footer.php');
+?>

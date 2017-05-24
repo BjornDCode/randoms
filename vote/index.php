@@ -1,11 +1,21 @@
 <?php
+
+    include_once('../scripts/fb-head.php');
+    include_once('../scripts/settings.php');
+
+    $helper = $fb->getRedirectLoginHelper();
+
+    $permissions = []; // Optional information that your app can access, such as 'email'
+    $loginUrl = $helper->getLoginUrl(URL.'/vote/vote.php', $permissions);
+
     include_once('../includes/header.php');
- ?>
 
-    <p>Vote Index</p>
+?>
 
-    <a href="../fb.php?redirect=vote">Login with Facebook</a>
+    Vote Index Page
 
- <?php
-     include_once('../includes/footer.php');
-  ?>
+    <a href="<?= htmlspecialchars($loginUrl) ?>">Vote</a>
+
+<?php
+    include_once('../includes/footer.php');
+?>

@@ -1,6 +1,3 @@
-<?php
-    include_once(__DIR__.'/../scripts/settings.php');
- ?>
 
 <!DOCTYPE html>
 <html>

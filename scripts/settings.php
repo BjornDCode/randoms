@@ -1,3 +1,3 @@
 <?php
-    define('URL', '/randoms');
- ?>
+    define('URL', 'http://bjornlindholm.dk/kea/randoms');
+?>
