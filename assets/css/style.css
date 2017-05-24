@@ -1,0 +1,86 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: pink;
+    font-family: 'myriad-pro';
+    color: #040404;
+}
+
+a {
+    color: #040404;
+    text-decoration: none;
+}
+
+
+
+/* Header */
+
+.site-header {
+
+}
+
+.site-header .logo {
+    display: none;
+}
+
+.site-header .site-nav {
+
+}
+
+.site-header .site-nav .hamburger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    padding: 0;
+    outline: none;
+}
+
+.site-header .site-nav .hamburger .hamburger-inner, .site-header .site-nav .hamburger .hamburger-inner:before, .site-header .site-nav .hamburger .hamburger-inner:after {
+    background-color: #040404;
+}
+
+.site-header .site-nav ul {
+    list-style-type: none;
+    opacity: 0;
+    pointer-events: none;
+    margin: 0;
+    padding: 75px 15px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: opacity 150ms ease-in-out;
+}
+
+.site-header .site-nav ul:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: white;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.site-header .site-nav .hamburger.is-active + ul {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.site-header .site-nav ul li {
+    margin-bottom: 15px;
+}
+
+.site-header .site-nav ul li a {
+    font-family: 'futura-pt';
+    font-style: italic;
+    font-size: 25px;
+}
