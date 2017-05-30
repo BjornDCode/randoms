@@ -4,9 +4,83 @@
     include_once('includes/navigation.php');
 ?>
 
-    Index Page
-
-    <a href="<?= URL ?>/vote">Voting Section</a>
+    <main class="site-content">
+        <section class="intro" id="intro">
+            <div class="tagline">
+                <h1>Hey Denmark,<br>randomise yourself!</h1>
+            </div>
+            <div class="packaging">
+                <img src="<?= URL ?>/assets/images/packaging.png" alt="Randoms Packaging">
+            </div>
+        </section>
+        <div class="participation" id="participate">
+            <section class="game" id="riddles">
+                <div class="tagline">
+                    <h2>Fancy Some Candy?</h2>
+                    <h2>Solve the riddle!</h2>
+                </div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                </p>
+                <a href="<?= URL ?>/riddles" class="button">Play</a>
+            </section>
+            <section class="vote" id="vote">
+                <div class="tagline">
+                    <h2>We make new shapes...</h2>
+                    <h2>...you vote for it</h2>
+                </div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                </p>
+                <a href="<?= URL ?>/vote" class="button">Vote</a>
+            </section>
+        </div>
+        <section class="product-info" id="product">
+            <div class="tagline">
+                <h2>Randoms</h2>
+            </div>
+            <p class="description">
+                From ping-pong paddles and paintbrushes, to snowflakes and saxophones - each pack of Rowntree's Randoms contains billions of possible random sweet combinations. With so many shapes, textures and flavours no other sweets are this randomly playful.
+            </p>
+            <div class="pros">
+                <div class="line">
+                    <span>No artificial colours,</span>
+                </div>
+                <div class="line">
+                    <span>flavours or preservatives.</span>
+                </div>
+            </div>
+            <img src="<?= URL ?>/assets/images/packaging.png" alt="Randoms Packaging" class="packaging">
+            <div class="info-links">
+                <a href="#ingredients">ingredients</a>
+                <a href="#nutritions">nutritional information</a>
+            </div>
+            <div id="ingredients">
+                <a href="#ingredients" class="close"></a>
+                <h3>Ingredients</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="nutritions">
+                <a href="#nutritions" class="close"></a>
+                <h3>Nutritional Information</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+        <section class="brand" id="brand">
+            <div class="tagline">
+                <h2>Rowntree's</h2>
+            </div>
+            <div class="content">
+                <p>
+                    Today, Rowntree's remain the nation's fruity favorite, with more single tubes of Fruit Pastilles sold than any other fruit confectionery product in the UK. In fact, our products are enjoyed by 15 million people every year.
+                </p>
+                <p>
+                    in 2005, Rowntree's pledged no artificial colors, flavors or preservatives in any of our products.
+                </p>
+            </div>
+            <img src="<?= URL ?>/assets/images/logo_bw.png" alt="Randoms Logo" class="logo">
+        </section>
+    </main>
 
 <?php
     include_once('includes/footer.php');

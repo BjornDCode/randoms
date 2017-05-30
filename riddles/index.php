@@ -6,19 +6,19 @@
     $helper = $fb->getRedirectLoginHelper();
 
     $permissions = []; // Optional information that your app can access, such as 'email'
-    $loginUrl = $helper->getLoginUrl(URL.'/vote/vote.php', $permissions);
+    $loginUrl = $helper->getLoginUrl(URL.'/riddles/riddles.php', $permissions);
 
     include_once('../includes/header.php');
 
 ?>
 
-    <main class="voting-index">
+    <main class="riddles-index">
         <section>
             <nav>
                 <a href="<?= URL ?>">&larr; Home</a>
             </nav>
             <div class="tagline">
-                <h2>Choose your favorite shape!</h2>
+                <h2>Solve some riddles!</h2>
             </div>
             <div class="content">
                 <p class="description">

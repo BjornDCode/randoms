@@ -1,12 +1,16 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Randoms - Not just good for children</title>
 
-        <!-- Responsive Meta Tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Meta Tags -->
+        <meta name="viewport"             content="width=device-width, initial-scale=1">
+        <meta property="og:url"           content="http://bjornlindholm.dk/kea/randoms" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Randoms - Not just good for children" />
+        <meta property="og:description"   content="Let's make a description here" />
+        <meta property="og:image"         content="http://bjornlindholm.dk/kea/randoms/assets/images/share.png" />
 
         <!-- Typekit Fonts -->
         <script src="https://use.typekit.net/rbi4puj.js"></script>
