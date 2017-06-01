@@ -72,10 +72,10 @@
             </div>
             <div class="content">
                 <p>
-                    Today, Rowntree's remain the nation's fruity favorite, with more single tubes of Fruit Pastilles sold than any other fruit confectionery product in the UK. In fact, our products are enjoyed by 15 million people every year.
+                    For over 130 years, the irresistible fruity taste of Rowntree’s products makes it impossible not to chew them. With delicious blackcurrant, lemon, strawberry, lime and orange flavors in each pack of Randoms, are you brainy enough to try?
                 </p>
                 <p>
-                    in 2005, Rowntree's pledged no artificial colors, flavors or preservatives in any of our products.
+                     With real fruit juice and no artificial colors, flavors or preservatives, they are an essence of playfulness, an escape of adult life. With so many shapes, textures and flavors no other sweets are this randomly clever.
                 </p>
             </div>
             <img src="<?= URL ?>/assets/images/logo_bw.png" alt="Randoms Logo" class="logo">
