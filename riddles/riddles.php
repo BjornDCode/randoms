@@ -34,7 +34,9 @@
     <main class="riddles-riddle">
         <section>
             <nav>
-                <a href="<?= URL ?>">&larr; Home</a>
+                <a href="<?= URL ?>">
+                    <img src="../assets/images/home.svg" alt="Go to front page">
+                </a>
             </nav>
             <div class="tagline">
                 <h2>Which is the next piece?</h2>

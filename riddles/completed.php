@@ -34,14 +34,16 @@
     <main class="riddles-completed">
         <section>
             <nav>
-                <a href="<?= URL ?>">&larr; Home</a>
+                <a href="<?= URL ?>">
+                    <img src="../assets/images/home.svg" alt="Go to front page">
+                </a>
             </nav>
             <div class="tagline">
                 <h2>Congratulations!</h2>
             </div>
             <div class="content">
                 <p class="description">
-                    This text describes the game. Includes a brief how to participate and also provides some information about why to participate.
+                    Wow! You managed to solve all the riddles on time. Great job! You can now claim your discount code for a pack of Randoms.
                 </p>
                 <div class="discount-code">
                     <p>Your discount code is:</p>

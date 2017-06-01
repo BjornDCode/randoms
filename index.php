@@ -20,7 +20,7 @@
                     <h2>Solve the riddle!</h2>
                 </div>
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    Are you ready to take on the RANDOMS CHALLENGE and get your hands on some Randoms. If you manage to solve our riddles you will get a pack of Randoms at a discounted price! Flex your brains before your friends, and treat yourself to some Randoms!
                 </p>
                 <a href="<?= URL ?>/riddles" class="button">Play</a>
             </section>
@@ -30,7 +30,7 @@
                     <h2>...you vote for it</h2>
                 </div>
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    Randoms have an ambition - to become a true Danish favorite. That's why Rowntrees is introducing the liquorice Random - and it's up to YOU to decide what shape it will take. Which shape do you think is the most symbolic to Denmark?
                 </p>
                 <a href="<?= URL ?>/vote" class="button">Vote</a>
             </section>
@@ -58,7 +58,7 @@
             <div id="ingredients">
                 <a href="#ingredients" class="close"></a>
                 <h3>Ingredients</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Glucose syrup, Sugar, Dextrin(Maize fibre), Gelling agents(Gelatine, Pectin), Acids (Citric Acid, Tartaric Acid, Malic Acid), Concentrated Fruit Juices (1.%) (Apple, Blueberry, Raspberry, Strawberry, Black Carrot), Flavourings, Glaze (Palm oil, Glazing Agent: Carnauba Wax), Fruit and vegetable concentrates (Black Carrot, Hibiscus, Carrot, Safflower), Spirulina Concentrate, Invert Sugar Syrup, Colours (Paprika Extract, Chlorophylls and chlorophyllins, Carotenes), Stabilisers (Carageenan), Acidity Regulators (Sodium ascorbate, Sodium citrate), Fruit puree concentrates (Blueberry, Strawberry, Raspberry).</p>
             </div>
             <div id="nutritions">
                 <a href="#nutritions" class="close"></a>

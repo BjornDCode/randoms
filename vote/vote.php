@@ -28,7 +28,9 @@
     <main class="voting-vote">
         <section>
             <nav>
-                <a href="<?= URL ?>">&larr; Home</a>
+                <a href="<?= URL ?>">
+                    <img src="../assets/images/home.svg" alt="Go to front page">
+                </a>
             </nav>
             <div class="tagline">
                 <h2>Choose your favorite shape!</h2>
@@ -39,13 +41,13 @@
                         <input type="radio" name="shape" value="beer" id="beer" required>
                         <label for="beer">The Beer</label>
                     </div>
-                    <div class="shape mermaid">
-                        <input type="radio" name="shape" value="mermaid" id="mermaid">
-                        <label for="mermaid">The Mermaid</label>
+                    <div class="shape flag">
+                        <input type="radio" name="shape" value="flag" id="flag">
+                        <label for="flag">The Flag</label>
                     </div>
-                    <div class="shape queen">
-                        <input type="radio" name="shape" value="queen" id="queen">
-                        <label for="queen">The Queen</label>
+                    <div class="shape letter">
+                        <input type="radio" name="shape" value="letter" id="letter">
+                        <label for="letter">The 'Ø'</label>
                     </div>
                 </div>
                 <input type="hidden" name="facebook_id" value="<?= $facebook_id ?>">

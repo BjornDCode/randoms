@@ -44,10 +44,6 @@ section {
     display: none;
 }
 
-.site-header .site-nav {
-
-}
-
 .site-header .site-nav .hamburger {
     position: fixed;
     top: 15px;
@@ -156,20 +152,8 @@ section {
         display: none;
     }
 
-    .site-header .site-nav ul .home  {
+    .site-header .site-nav ul .home, .site-header .site-nav ul .riddles, .site-header .site-nav ul .voting, .site-header .site-nav ul .participate   {
         display: none;
-    }
-
-    .site-header .site-nav ul .riddles  {
-        display: none;
-    }
-
-    .site-header .site-nav ul .voting  {
-        display: none;
-    }
-
-    .site-header .site-nav ul .participate  {
-        display: block;
     }
 
     .site-header .site-nav ul li {
@@ -216,10 +200,11 @@ section {
 .intro .tagline {
     background-color: #f8f8f8;
     padding: 5px;
-    padding-left: 200px;
+    /*padding-left: 200px;*/
     transform: rotate(-5deg) translateX(-110%);
     width: 110%;
     box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.55);
+    text-align: center;
 }
 
 .intro.loaded .tagline {
@@ -229,7 +214,7 @@ section {
 
 @keyframes tagline {
     100% {
-        transform: rotate(-5deg) translateX(-190px);
+        transform: rotate(-5deg) translateX(-5%);
     }
 }
 
@@ -238,6 +223,7 @@ section {
     font-family: 'futura-pt';
     font-style: italic;
     font-size: 30px;
+    /*font-weight: 500;*/
 }
 
 .intro .packaging {
@@ -317,13 +303,19 @@ section {
 
 @media (min-width: 1024px) {
 
+    .intro .tagline {
+        padding: 5px 100px;
+        text-align: left;
+        margin-top: 10%;
+    }
+
     .intro .packaging {
-        margin-top: -23%;
+        margin-top: -17%;
     }
 
     .intro .packaging img {
         max-width: 35%;
-        padding-right: 20%;
+        padding-right: 15%;
         transform: rotate(18deg);
     }
 }
@@ -332,7 +324,7 @@ section {
 /* Game */
 
 .game {
-    background-color: #7f47dd;
+    background-color: #3035af;
     position: relative;
     z-index: 49;
     padding-top: 20%;
@@ -397,7 +389,7 @@ section {
 
 .game .description {
     width: 80%;
-    margin-top: 35%;
+    margin-top: 18%;
     margin-left: 40px;
 }
 
@@ -494,7 +486,7 @@ section {
 /* Vote */
 
 .vote {
-    background-color: #7f47dd;
+    background-color: #3035af;
     position: relative;
     z-index: 49;
     padding-top: 20%;
@@ -529,7 +521,6 @@ section {
     background-color: #f8f8f8;
     padding: 5px;
     display: inline-block;
-    /*width: 200%;*/
     box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.55);
     transition: all 350ms ease-in;
 }
@@ -556,7 +547,7 @@ section {
 .vote .description {
     width: 80%;
     margin: 0 auto;
-    margin-top: 22%;
+    margin-top: 17%;
     color: #f8f8f8;
 }
 
@@ -874,7 +865,7 @@ section {
 
 .product-info #ingredients, .product-info #nutritions {
     position: absolute;
-    top: 30%;
+    top: 15%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -894,7 +885,6 @@ section {
     background-image: url('../images/arrow.svg');
     background-size: contain;
     position: absolute;
-    /*left: calc(50% - 15px);*/
     right: 30px;
     top: 15px;
 }
@@ -903,6 +893,8 @@ section {
     transform: translateY(0);
     opacity: 1;
 }
+
+
 
 @media (min-width: 375px) {
 
@@ -1023,7 +1015,7 @@ section {
     }
 
     .product-info .pros {
-        margin-top: 0;
+        margin-top: -7%;
         margin-left: 15%;
     }
 
@@ -1038,6 +1030,7 @@ section {
     .product-info .pros .line span {
         opacity: 0;
         transform: rotate(-5deg) translateX(-120px);
+        font-size: 20px;
     }
 
     .product-info .pros.in-view .line span {
@@ -1054,7 +1047,7 @@ section {
     }
 
     .product-info #ingredients, .product-info #nutritions {
-        top: 40%;
+        top: 30%;
         bottom: 0%;
         left: 50%;
         right: 5%;
@@ -1225,13 +1218,18 @@ section {
 }
 
 .voting-index nav, .voting-vote nav, .voting-thanks nav {
-    padding: 5px;
+    padding: 10px;
 }
 
 .voting-index nav a, .voting-vote nav a, .voting-thanks nav a {
     font-family: 'futura-pt';
     font-style: italic;
     font-size: 25px;
+}
+
+.voting-index nav a img, .voting-vote nav a img, .voting-thanks nav a img {
+    width: 25px;
+    height: 25px;
 }
 
 .voting-index .tagline h2, .voting-vote .tagline h2, .voting-thanks .tagline h2 {
@@ -1257,7 +1255,9 @@ section {
 }
 
 .voting-index .content p {
-    color: #f8f8f8;
+    color: #040404;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .voting-index .content .facebook-login {
@@ -1272,7 +1272,7 @@ section {
     font-weight: bold;
     font-size: 20px;
     animation: button 350ms forwards;
-    animation-delay: 1500ms;
+    animation-delay: 1000ms;
     opacity: 0;
 }
 
@@ -1310,12 +1310,12 @@ section {
     background-image: url('../images/shapes/beer.png');
 }
 
-.voting-vote .shapes .mermaid label:before, .voting-thanks .shapes .mermaid .image {
-    background-image: url('../images/shapes/beer.png');
+.voting-vote .shapes .flag label:before, .voting-thanks .shapes .flag .image {
+    background-image: url('../images/shapes/flag.png');
 }
 
-.voting-vote .shapes .queen label:before, .voting-thanks .shapes .queen .image {
-    background-image: url('../images/shapes/beer.png');
+.voting-vote .shapes .letter label:before, .voting-thanks .shapes .letter .image {
+    background-image: url('../images/shapes/letter.png');
 }
 
 .voting-vote .shapes .shape input:checked + label {
@@ -1378,6 +1378,7 @@ section {
 
 .voting-thanks .competition-info p {
     margin-top: 0;
+    /*color: #f8f8f8;*/
 }
 
 .voting-thanks .competition-info .fb-share-button {
@@ -1422,6 +1423,7 @@ section {
 
     .voting-thanks .shapes .shape:nth-child(1) {
         align-items: flex-end;
+        transform: translateX(100px);
     }
 
     .voting-thanks .shapes .shape:nth-child(2) {
@@ -1430,6 +1432,7 @@ section {
 
     .voting-thanks .shapes .shape:nth-child(3) {
         align-items: flex-start;
+        transform: translateX(-100px);
     }
 
     .voting-thanks .shapes .shape .image {
@@ -1454,7 +1457,7 @@ section {
 
 @media (min-width: 1024px ) {
 
-    .voting-index, .voting-vote, .voting-thanks {
+    .voting-index, .voting-vote {
         background-image: url('../images/voting_bg_h.png');
         background-size: cover;
     }
@@ -1471,6 +1474,7 @@ section {
 
     .voting-index .content p {
         color: #040404;
+        background: transparent;
     }
 
     .voting-vote .shapes .shapes-container {
@@ -1493,7 +1497,7 @@ section {
     }
 
     .voting-index .content .facebook-login, .voting-vote .shapes button {
-        font-size: 30px;
+        font-size: 25px;
         padding: 8px 75px;
     }
 
@@ -1540,13 +1544,18 @@ section {
 }
 
 .riddles-index nav {
-    padding: 5px;
+    padding: 10px;
 }
 
 .riddles-index nav a {
     font-family: 'futura-pt';
     font-style: italic;
     font-size: 25px;
+}
+
+.riddles-index nav a img {
+    width: 25px;
+    height: 25px;
 }
 
 .riddles-index .tagline h2 {
@@ -1562,7 +1571,7 @@ section {
 
 .riddles-index .content {
     flex: 1;
-    padding: 20% 30px;
+    padding: 5% 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1570,7 +1579,8 @@ section {
 }
 
 .riddles-index .content p {
-    /*color: #f8f8f8;*/
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
 }
 
 .riddles-index .content .facebook-login {
@@ -1586,7 +1596,7 @@ section {
     font-weight: bold;
     font-size: 20px;
     animation: button 350ms forwards;
-    animation-delay: 1500ms;
+    animation-delay: 1000ms;
     opacity: 0;
 }
 
@@ -1610,7 +1620,7 @@ section {
 }
 
 .riddles-riddle nav {
-    padding: 5px;
+    padding: 10px;
     position: fixed;
     z-index: 100;
 }
@@ -1619,6 +1629,11 @@ section {
     font-family: 'futura-pt';
     font-style: italic;
     font-size: 25px;
+}
+
+.riddles-riddle nav a img {
+    width: 25px;
+    height: 25px;
 }
 
 .riddles-riddle .tagline h2 {
@@ -1796,13 +1811,18 @@ section {
 }
 
 .riddles-completed nav, .riddles-failed nav {
-    padding: 5px;
+    padding: 10px;
 }
 
 .riddles-completed nav a, .riddles-failed nav a {
     font-family: 'futura-pt';
     font-style: italic;
     font-size: 25px;
+}
+
+.riddles-completed nav a img, .riddles-failed nav a img {
+    width: 25px;
+    height: 25px;
 }
 
 .riddles-completed .tagline h2, .riddles-failed .tagline h2 {
@@ -1853,7 +1873,7 @@ section {
     font-weight: bold;
     font-size: 20px;
     animation: button 350ms forwards;
-    animation-delay: 1500ms;
+    animation-delay: 1000ms;
     opacity: 0;
 }
 
@@ -1867,11 +1887,11 @@ section {
         display: none;
     }
 
-    .riddles-index .tagline, .riddles-failed .tagline {
+    .riddles-index .tagline, .riddles-failed .tagline, .riddles-completed .tagline {
         text-align: right;
     }
 
-    .riddles-index .tagline h2, .riddles-failed .tagline h2 {
+    .riddles-index .tagline h2, .riddles-failed .tagline h2, .riddles-completed .tagline h2 {
         display: inline-block;
         width: auto;
         padding: 5px 15px;
@@ -1879,7 +1899,7 @@ section {
         margin-top: 0;
     }
 
-    .riddles-index .content, .riddles-failed .content {
+    .riddles-index .content, .riddles-failed .content, .riddles-completed .content {
         padding: 5% 60px;
     }
 
@@ -1887,7 +1907,7 @@ section {
 
 @media (min-width: 1024px) {
 
-    .riddles-index, .riddles-failed {
+    .riddles-index, .riddles-failed, .riddles-completed {
         background-image: url('../images/gaming_bg_d.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -1899,22 +1919,29 @@ section {
         display: none;
     }
 
-    .riddles-index .tagline h2, .riddles-failed .tagline h2 {
+    .riddles-failed .tagline  {
+        margin-right: 25%;
+    }
+
+    .riddles-index .tagline h2, .riddles-failed .tagline h2, .riddles-completed .tagline h2 {
         font-size: 35px;
     }
 
-    .riddles-index .content, .riddles-failed .content {
+
+    .riddles-index .content, .riddles-failed .content, .riddles-completed .content {
         max-width: 40%;
         margin: 0 auto;
-        padding: 10% 60px;
+        padding: 5% 60px;
+
     }
 
     .riddles-index .content p {
-        color: #040404;
+        color: #f8f8f8;
+        background-color: transparent;
     }
 
     .riddles-index .content .facebook-login {
-        font-size: 30px;
+        font-size: 25px;
         padding: 8px 75px;
     }
 
@@ -1922,6 +1949,7 @@ section {
         margin-top: -55px;
         padding: 100px 5px 5px 5px;
         font-size: 30px;
+        transform: translateX(-5%) rotate(3deg)
     }
 
     .riddles-riddle .riddle header {
@@ -1950,7 +1978,7 @@ section {
     }
 
     .riddles-failed .content .try-again {
-        font-size: 30px;
+        font-size: 25px;
         padding: 8px 75px;
     }
 

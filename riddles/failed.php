@@ -7,14 +7,16 @@
     <main class="riddles-failed">
         <section>
             <nav>
-                <a href="<?= URL ?>">&larr; Home</a>
+                <a href="<?= URL ?>">
+                    <img src="../assets/images/home.svg" alt="Go to front page">
+                </a>
             </nav>
             <div class="tagline">
                 <h2>Oh no!</h2>
             </div>
             <div class="content">
                 <p class="description">
-                    You are a failure in this game and life in general. Why are you like this?
+                    Unfortunately you didn’t manage to solve all the riddles correctly. You can try again or come back later to make sure you claim your discount code.
                 </p>
                 <a href="<?= URL ?>/riddles/" class="try-again">Try again</a>
             </div>

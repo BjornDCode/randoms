@@ -105,7 +105,7 @@ $(document).ready(function() {
         }
 
         if ($pros.length) {
-            slideInAtCustom($window, $pros, 200);
+            slideInAtHundred($window, $pros);
         }
 
         if ($infoLinks.length) {
